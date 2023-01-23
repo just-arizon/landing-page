@@ -109,3 +109,75 @@ div.hero-image figure img{
     width: 400px;
     height: 400px;
 }
+section{
+    display: flex;
+    flex-direction: column;
+}
+.man-header h2{
+    text-align: center;
+    color: black;
+}
+.man-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.man-content{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: salmon; */
+}
+p.man-contents-p{  
+    width: 250px;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+}
+.man-content .man-contents-1{
+    width: 200px;
+    height: 200px;
+    border: 5px solid #3882f6;
+    border-radius: 15px;
+    margin: 40px 30px 0;
+    background-image: url(./images/lime-g97c84336a_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.man-content .man-contents-2{
+    width: 200px;
+    height: 200px;
+    border: 5px solid #3882f6;
+    border-radius: 15px;
+    margin: 40px 30px 0;
+    background-image: url(./images/wildlife-g44a8d218f_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.man-content .man-contents-3{
+    width: 200px;
+    height: 200px;
+    border: 5px solid #3882f6;
+    border-radius: 15px;
+    margin: 40px 30px 0;
+    background-image: url(./images/flow-gfb6785d44_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.man-content .man-contents-4{
+    width: 200px;
+    height: 200px;
+    border: 5px solid #3882f6;
+    border-radius: 15px;
+    margin: 40px 30px 0;
+    background-image: url(./images/bee-ge6536b259_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.man-contents figure img{
+    width: 100px;
+    height: 100px;
+    /* object-fit: cover; */
+}
