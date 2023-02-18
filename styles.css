@@ -8,7 +8,7 @@
 }
 body{
     font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 header,
 footer{
@@ -46,6 +46,9 @@ a{
     font-size: 18px;
     text-decoration: none;
 }
+div.hamburger {
+    display: none;
+}
 div.hero{
     display: flex;
     flex-direction: row;
@@ -67,7 +70,6 @@ h1{
 p{
     font-size: 18px;
     color: #f9faf8;
-    width: 650px;
     line-height: 27px;
 }
 button{
@@ -253,13 +255,32 @@ footer{
 div.footer-container{
     text-align: center;
 }
-@media screen and (min-width: 480px) and (max-width: 780px){
+/*  */
+@media screen and (max-width: 480px){
+    
     nav{
-        padding: 0 50px;
+        width: 100%;
+        padding: 0 0.9rem;
+    }
+    a{
+        color: #E5E7EB;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    .link ul{
+        display: none;
+    }
+    div.hamburger {
+        display: flex;
+        align-items: center;
+    }
+    div.hamburger span{
+       width: 70px;
+       height: 70px;
     }
     div.hero-text{
         padding-top: 2.5rem;
-        padding-left: 3rem;
+        padding-left: 1.5rem;
         flex: 2;
     }
     div.hero-text p{
@@ -267,10 +288,19 @@ div.footer-container{
     }
     svg{
         color: #E5E7EB;
-        margin-top: 30px;
     }
     div.hero-image figure img{
-   margin-top: 30px;
+   margin-top: 100px;
+}
+div.svg-do{
+    display: none;
+}
+
+div.svg-do_flex-end{
+    display: none;
+}
+p{
+    font-size: 17px;
 }
 .quote__passage {
     padding: 50px;
@@ -280,8 +310,8 @@ div.footer-container{
  line-height: 34px;
 }
 .call-to-action_container{
-   max-width: 520px;
-   min-width: 320px;
+   /* max-width: 520px;
+   min-width: 320px; */
    gap: 30px;
 }
 .call-to-action-wrapper-1 h4{
@@ -292,15 +322,26 @@ div.footer-container{
 }
 
 }
+/*  *
 @media screen and (min-width: 320px) and (max-width: 480px){
+    header{
+        width: 100%;
+    }
     nav{
         width: 100%;
-        padding: 0 1.5rem;
+        padding: 0 0.9rem;
     }
     a{
         color: #E5E7EB;
         font-size: 14px;
         text-decoration: none;
+    }
+    .link ul{
+        display: none;
+    }
+    div.hero{
+        display: flex;
+        flex-direction: column;
     }
     div.hero-text{
         width: 100%;
@@ -321,12 +362,10 @@ div.footer-container{
         align-items: flex-end;
     }
     div.hero-image figure img {
-        width: 400px;
-        height: auto;
+       display: none;
       }
     svg{
         color: #E5E7EB;
-        margin-top: 30px;
     }
     div.hero-image figure img{
    margin-top: 30px;
